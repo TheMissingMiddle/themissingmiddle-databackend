@@ -1,0 +1,17 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "./build",
+        "sourceMap": true,
+        "target": "es2015",
+        "declaration": true
+    },
+    "include" : [
+        "spec/**/*",
+        "src/**/*"
+    ]
+}
