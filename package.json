@@ -4,9 +4,9 @@
   "description": "Backend prototype of data provisioner for TMM",
   "main": "build/src/app.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node build/src/app.js",
-    "test": "jasmine"
+    "build": "./node_modules/.bin/tsc",
+    "start": "node ./build/src/app.js",
+    "test": "node ./build/src/app.js & ./node_modules/.bin/jasmine-node --junitreport ./build/spec"
   },
   "author": "Hendrik Belitz",
   "repository": {
@@ -18,15 +18,18 @@
   ],
   "license": "ISC",
   "dependencies": {
-  },
-  "devDependencies": {
-    "glob": "^7.1.1",
-    "rx": "^4.1.0",
-    "typescript": "^2.3.2",
+    "@types/frisby": "^0.8.0",
     "@types/jasmine": "^2.5.47",
     "@types/node": "^7.0.8",
+    "@types/restify": "^2.0.42",
     "@types/rx": "^4.1.1",
+    "frisby": "^0.8.5",
+    "glob": "^7.1.1",
     "jasmine": "^2.6.0",
-    "nodemon": "^1.11.0"
+    "jasmine-node": "^1.14.5",
+    "nodemon": "^1.11.0",
+    "restify": "^4.3.0",
+    "rx": "^4.1.0",
+    "typescript": "^2.3.2"
   }
 }
