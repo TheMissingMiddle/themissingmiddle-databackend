@@ -72,6 +72,6 @@ const server = restify.createServer();
 server.get("/interaction/:org", respondInteraction);
 server.get("/metadata/:org", respondMetaData);
 
-server.listen(8080, () => {
+server.listen(5000, () => {
   console.log("%s listening at %s", server.name, server.url);
 });

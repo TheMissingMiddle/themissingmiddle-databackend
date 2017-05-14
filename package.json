@@ -5,6 +5,7 @@
   "main": "build/src/app.js",
   "scripts": {
     "build": "./node_modules/.bin/tsc",
+    "postinstall": "./node_modules/.bin/tsc",
     "start": "node ./build/src/app.js",
     "test": "node ./build/src/app.js & ./node_modules/.bin/jasmine-node --junitreport ./build/spec"
   },
